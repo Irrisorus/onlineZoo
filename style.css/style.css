@@ -235,11 +235,13 @@ top: 160px;
     flex-shrink: 0;
     background-image: url(../assets/img/bamboo-cap.png);
     background-repeat: no-repeat;
+    background-size: cover;
 }
 .explanation__info{
     display: flex;
     flex-direction: column;
-    gap: 54px;
+   justify-content: space-between;
+    max-height: 408px;
 }
 .explanation__title{
     font-size: 48px;
@@ -290,7 +292,7 @@ line-height: 120%; /* 28.8px */
     background-image: url(../assets/img/strelitzia.png);
     background-repeat: no-repeat;
     position: absolute;
-    bottom: 0px
+    bottom: 0px;
     
 }
 .animals-cards__photo-palm{
@@ -368,7 +370,7 @@ line-height: 120%; /* 28.8px */
     flex-shrink: 0;
     background-image: url(../assets/img/pandas.png);
     background-repeat: no-repeat;
-    
+    background-size: contain;
 
 }
 
@@ -390,6 +392,7 @@ line-height: 120%; /* 28.8px */
 
 .card{
     margin-bottom: 30px;
+    margin-top: 30px;
     border-radius: 5px;
     border: 1px solid var(--2, #FA6F32);
 }
@@ -439,7 +442,7 @@ line-height: 120%; /* 28.8px */
 .animal-cards__inner{
     display: flex;
     flex-direction: row;
-    gap:20px;
+    
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -841,4 +844,74 @@ padding-bottom: 180px;
     font-weight: 400;
     line-height: 140%; /* 22.4px */
     cursor: pointer;
+}
+
+
+
+@media only screen and (max-width: 1500px){
+    .animals-cards__photo-flowers{
+        display: none;
+    }
+}
+@media only screen and (max-width: 1200px){
+    .explanation__img{
+        width: 455px;
+        height: 408px;
+        
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    .container{
+    max-width:1024px;
+    }
+    .header__main__title{
+        right: 25px;
+    }
+    .animals-cards__photo-flowers{
+        display: none;
+    }
+    .animals-cards__photo-strelitzia{
+        width: 241px;
+        height: 180px;
+    }
+    .animals-cards__photo-palm{
+        width: 386px;
+        height: 202px;
+       
+    }
+    .container__explanation{
+        padding: 0 30px;
+        padding-top: 109px;
+        gap:31px;
+        padding-bottom: 90px;
+    }
+    .explanation__img{
+        width: 455px;
+        height: 408px;
+    }
+    .slider__cards{
+        flex-wrap:wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 29px;
+    }
+    .container__animals-slider{
+       
+       
+    }
+    .animal-cards__inner{
+        
+    }
+    .card{
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+    .card__image{
+    width: 294px;
+    height: 294px;
+
+    }
+  
+
 }
