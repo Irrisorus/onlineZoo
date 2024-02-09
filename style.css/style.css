@@ -439,7 +439,7 @@ line-height: 120%; /* 28.8px */
 /* .animals__choise__button{
    
 } */
-.animal-cards__inner{
+/* .animal-cards__inner{
     display: flex;
     flex-direction: row;
     
@@ -447,7 +447,7 @@ line-height: 120%; /* 28.8px */
     align-items: center;
     flex-wrap: wrap;
     position: relative;
-}
+} */
 
 
 .arrows-block{
