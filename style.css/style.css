@@ -46,7 +46,7 @@ body{
    
 }
 .header__top{
-    padding: 14px;
+    padding: 15px 0 15px 0;
     background-color: #000;
     min-height: 80px;
     width: 100%;
@@ -56,7 +56,7 @@ body{
     
 }
 .header__top__wrapper{
-    padding: 0 15px;
+    
     max-width:1230px;
     margin: 0 auto;
     display: flex;
@@ -439,7 +439,7 @@ line-height: 120%; /* 28.8px */
 /* .animals__choise__button{
    
 } */
-/* .animal-cards__inner{
+.animal-cards__inner{
     display: flex;
     flex-direction: row;
     
@@ -447,7 +447,7 @@ line-height: 120%; /* 28.8px */
     align-items: center;
     flex-wrap: wrap;
     position: relative;
-} */
+}
 
 
 .arrows-block{
@@ -466,12 +466,15 @@ line-height: 120%; /* 28.8px */
     padding-bottom: 100px;
 }
 .container__feed{
+    
+}
+.feed__block{
     display: flex;
     flex-direction:column ;
     align-items: center;
-    padding-top:41px ;
-    padding-bottom:59px ;
-    justify-content: center;
+    padding:41px 88px 59px 88px ;
+   
+    justify-content:center;
     border-radius: 20px;
     background: var(--frosted_glass_white, rgba(253, 253, 255, 0.52));
     backdrop-filter: blur(2px);
@@ -741,6 +744,7 @@ padding-bottom: 180px;
     flex-direction: row;
     position: relative;
     justify-content: space-between;
+    
 
 }
 .footer__block{
@@ -857,6 +861,7 @@ padding-bottom: 180px;
     .animals-cards__photo-flowers{
         display: none;
     }
+
 }
 @media only screen and (max-width: 1200px){
     .explanation__img{
@@ -869,7 +874,10 @@ padding-bottom: 180px;
 @media only screen and (max-width: 1024px){
     .container{
     max-width:1024px;
+    padding: 0 30px;
     }
+    
+    
     .header__main__title{
         right: 25px;
     }
@@ -895,18 +903,12 @@ padding-bottom: 180px;
         width: 455px;
         height: 408px;
     }
+    
     .slider__cards{
         flex-wrap:wrap;
         justify-content: center;
         align-items: center;
         gap: 29px;
-    }
-    .container__animals-slider{
-       
-       
-    }
-    .animal-cards__inner{
-        
     }
     .card{
         margin-bottom: 41px;
@@ -938,10 +940,16 @@ padding-bottom: 180px;
     .slider__button_prev{
         margin-right: 90px;
     }
+    
+    .container__footer{
+        justify-content: center;
+    }
 
-    /* .slider__button_next_adapt,
-    .slider__button_prev_adapt{
-        display: block;
-    } */
+    .footer__block:nth-child(3){
+        position: absolute;
+        right:62px;
+    }
+
+   
 
 }

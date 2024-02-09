@@ -17,7 +17,13 @@ new Swiper(".swiper-feedback",{
         draggable:true
     },
     slidesPerView:4,
-    
+
+    breakpoints:{
+        1024:{
+            slidesPerView:3,
+        }
+    }
+   
     
 });
 
