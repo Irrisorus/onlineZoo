@@ -4,7 +4,9 @@ new Swiper(".swiper",{
         nextEl:".slider__button_next",
         prevEl:".slider__button_prev"
     },
+ 
    
+    
 });
 
 new Swiper(".swiper-feedback",{
