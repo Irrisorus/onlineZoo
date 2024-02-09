@@ -465,9 +465,7 @@ line-height: 120%; /* 28.8px */
     padding-top: 69px;
     padding-bottom: 100px;
 }
-.container__feed{
-    
-}
+
 .feed__block{
     display: flex;
     flex-direction:column ;
@@ -624,7 +622,6 @@ padding-bottom: 180px;
 .feedback__cards{
     display: flex;
     flex-direction: row;
-    gap: 30px ;
     min-width: 0;
    
 }
@@ -732,6 +729,8 @@ padding-bottom: 180px;
 .feedback__button{
     border-radius:5px ;
 }
+
+
 
 /* -----------------------------------------------------footer------------------------------------------- */
 .footer{
@@ -942,7 +941,7 @@ padding-bottom: 180px;
     }
     
     .container__footer{
-        justify-content: center;
+        justify-content: space-between;
     }
 
     .footer__block:nth-child(3){

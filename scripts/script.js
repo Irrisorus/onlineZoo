@@ -19,8 +19,12 @@ new Swiper(".swiper-feedback",{
     slidesPerView:4,
 
     breakpoints:{
-        1024:{
+        780:{
             slidesPerView:3,
+            spaceBetween:30,
+        },
+        1024:{
+            slidesPerView:4,
         }
     }
    
