@@ -38,6 +38,7 @@ prevButton= document.querySelector(".slider__button_prev");
 burgerMenu=document.querySelector(".header__menu-burger");
 headerTop=document.querySelector(".header__top");
 headerMenu=document.querySelector(".header__top-menu")
+infoBox=document.querySelector(".info-box");
 
 sliderButtons =[];
 sliderButtons.push(nextButton,prevButton)
@@ -51,9 +52,21 @@ sliderButtons.forEach(element => {
     })
     
 });
+
+if(window.innerWidth<900){
+    infoBox.append(headerMenu);
+}
+
 burgerMenu.addEventListener('click',()=>{
+   
     console.log("aaaa")
-    headerTop.classList.toggle("header__top_active");
+    
+        
+    
+    
+    // headerTop.classList.toggle("header__top_active");
     burgerMenu.classList.toggle("header__menu-burger_active");
-    headerMenu.style.display="block";
+    headerMenu.classList.toggle("header__top-menu_active")
+  
+   
 })
