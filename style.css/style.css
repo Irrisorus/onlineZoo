@@ -122,6 +122,45 @@ body{
     
 
 }
+.header__menu-burger{
+    width: 30px;
+    height: 22px;
+    position: relative;
+    display: none;
+    cursor: pointer;
+    
+}
+
+.header__menu-burger::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #ffffff;
+}
+.header__menu-burger::after{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #ffffff;
+}
+.header__menu-burger span{
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+
+
 .header__top-item_link_active{
     color: orange;
 }
@@ -860,8 +899,40 @@ padding-bottom: 180px;
     .animals-cards__photo-flowers{
         display: none;
     }
-
 }
+@media only screen and (max-width: 1380px){
+    
+    .card{
+        margin-bottom: 41px;
+        margin-top: 41px;
+      
+    }
+    
+    /* .arrows-block{
+        display: flex;
+        top: 46.5%;
+        left: 43%;
+        align-items: center;
+        gap: 30px;
+        max-width: 295px;
+        z-index: 1;
+    } */
+    .slider__button_next,
+    .slider__button_prev{
+        position: absolute;
+        z-index: 2;
+       
+    }
+    .slider__button_next{
+        margin-left: 90px;
+    }
+    .slider__button_prev{
+        margin-right: 90px;
+    }
+    
+    }
+
+
 @media only screen and (max-width: 1200px){
     .explanation__img{
         width: 455px;
@@ -909,10 +980,7 @@ padding-bottom: 180px;
         align-items: center;
         gap: 29px;
     }
-    .card{
-        margin-bottom: 41px;
-        margin-top: 41px;
-    }
+ 
     .card__image{
     width: 294px;
     height: 294px;
@@ -951,4 +1019,29 @@ padding-bottom: 180px;
 
    
 
+}
+
+
+@media only screen and (max-width:900px){
+    .info__box{
+        gap: 0px;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .header__menu-burger{
+        display: block;
+    }
+    .header__top-menu{
+        display: none;
+    }
+    .header__top-list{
+        
+        flex-direction: column;
+
+    }
+   
+    .author{
+        display: none;
+    }
+    
 }
