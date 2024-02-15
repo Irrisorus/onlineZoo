@@ -15,11 +15,19 @@ body{
    
    
 }
+
+
 .wrapper{
     display: flex;
     flex-direction: column;
     min-height: 100%;
-
+    
+   
+}
+.wrapper_burger-active{
+    filter: blur(5px);
+    
+   
 }
 .main{
     flex: 1 1 auto;
@@ -28,8 +36,8 @@ body{
 
 
 .container{
-    padding: 0 15px;
-    max-width:1230px;
+    padding: 0 30px;
+    max-width:1260px;
     margin: 0 auto;
 }
 .container__header{
@@ -90,16 +98,25 @@ body{
     position: relative;
     padding: 3.55px 4.75px;
     cursor: pointer;
+    transition: all 0.3s ease 0s;
 }
-.logo__box div:nth-child(1){
+
+.logo__box_active{
+    border: 1px solid #FE9013;
+}
+.logo__name{
+    transition: all 0.3s ease 0s;
     color: #FFF;
     text-align: center;
     font-size: 19.014px;
     font-style: normal;
     font-weight: 400;
     line-height: 120%; /* 22.817px */
-
 }
+.logo__name_active{
+    color: #FE9013;
+}
+
 
 .logo__image{
     
@@ -978,7 +995,7 @@ padding-bottom: 180px;
 @media only screen and (max-width: 1024px){
     .container{
     max-width:1024px;
-    padding: 0 30px;
+  
     }
     
     
@@ -998,7 +1015,7 @@ padding-bottom: 180px;
        
     }
     .container__explanation{
-        padding: 0 30px;
+        
         padding-top: 109px;
         gap:31px;
         padding-bottom: 90px;
@@ -1074,9 +1091,9 @@ padding-bottom: 180px;
         position: absolute;
         top: 70px;
         left: -200%;
-        width: 100%;
+        width: 900px;
         height: 329px;
-        background-color: #000000;
+        background-color: #ffffff;
         transition: all 0.3s ease 0s;
         padding-left: 30px;
         padding-top: 30px;
@@ -1087,7 +1104,7 @@ padding-bottom: 180px;
     }
     .header__top-menu_active{
         top:70px;
-        left:0;
+        left:-30px;
         transition: all 0.3s ease 0s;
     }
     .header__top-list{
@@ -1100,9 +1117,14 @@ padding-bottom: 180px;
         display: none;
     }
     .header__top-item{
-        color:  rgb(255, 255, 255);
+        color:  rgb(0, 0, 0);
         transition: all 0.3s ease 0s;
     }
-
+    .header__top-item_link{
+        color: #000;
+    }
+    .header__top-item_link_active{
+        color: #FE9013;
+    }
     
 }

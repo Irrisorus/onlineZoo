@@ -33,15 +33,18 @@ new Swiper(".swiper-feedback",{
 
 
 
-nextButton= document.querySelector(".slider__button_next");
-prevButton= document.querySelector(".slider__button_prev");
-burgerMenu=document.querySelector(".header__menu-burger");
-headerTop=document.querySelector(".header__top");
-headerMenu=document.querySelector(".header__top-menu")
-infoBox=document.querySelector(".info-box");
+let nextButton= document.querySelector(".slider__button_next");
+let prevButton= document.querySelector(".slider__button_prev");
+let burgerMenu=document.querySelector(".header__menu-burger");
+let headerTop=document.querySelector(".header__top");
+let headerMenu=document.querySelector(".header__top-menu")
+let infoBox=document.querySelector(".info-box");
+let logoBox=document.querySelector(".logo__box")
+let logoName=document.querySelector(".logo__name")
+let wrapper=document.querySelector(".wrapper")
 
-sliderButtons =[];
-sliderButtons.push(nextButton,prevButton)
+
+let sliderButtons =[];
 console.log(sliderButtons);
 sliderButtons.forEach(element => {
     element.addEventListener('click',function(e){
@@ -52,21 +55,22 @@ sliderButtons.forEach(element => {
     })
     
 });
+//////////////////////////----фиксить
 
-if(window.innerWidth<900){
-    infoBox.append(headerMenu);
-}
+// 
 
 burgerMenu.addEventListener('click',()=>{
-   
+  
     console.log("aaaa")
     
         
     
-    
-    // headerTop.classList.toggle("header__top_active");
+
     burgerMenu.classList.toggle("header__menu-burger_active");
-    headerMenu.classList.toggle("header__top-menu_active")
-  
+    headerMenu.classList.toggle("header__top-menu_active");
+    logoBox.classList.toggle("logo__box_active");
+    logoName.classList.toggle("logo__name_active");
+    
+    
    
 })
