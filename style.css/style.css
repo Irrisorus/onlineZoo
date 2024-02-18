@@ -449,14 +449,17 @@ line-height: 120%; /* 28.8px */
 }
 .swiper-wrapper{
    
+  position: relative;
   
+  /* ------ */
 }
 
 .swiper-slide{
     /* max-width: 366px; */
   
-    display: grid;
-    grid-template-rows: 1fr 1fr
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
    
     
 }
@@ -758,7 +761,8 @@ padding-bottom: 180px;
 .swiper-scrollbar{
     cursor: pointer;
     background-color:#FE9013;
-   
+    position: relative;
+    z-index: 1;
    
    
    
@@ -1121,6 +1125,7 @@ padding-bottom: 180px;
         transition: all 0.3s ease 0s;
         padding-left: 30px;
         padding-top: 30px;
+        z-index: 4;
        
 
         
@@ -1160,7 +1165,7 @@ padding-bottom: 180px;
         top: -45%;
         width: 100px;
         height: 100px;
-        left: 30%;
+        left: 27%;
         z-index: 2;
       
     
@@ -1171,5 +1176,47 @@ padding-bottom: 180px;
         left: 60%;
         
     
+    }
+    .swiper-wrapper{
+        max-width: 770px;
+        
+    }
+    /* .feedback__cards{
+        display: block;
+    }
+    .swiper-feedback{
+        gap: 0;
+    }
+    .swiper-wrapper-feedback{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 30px;
+    }
+    .slide-feedback{
+        height: auto;
+        width: auto;
+    }
+    .feedback__card{
+        width: 100%;
+    } */
+
+
+  
+}
+@media only screen and (max-width:675px){
+    .swiper-wrapper{
+        max-width: 570px;
+        
+    }
+    .card__image{
+        height: 285px;
+    }
+    .slider__button_next,
+    .slider__button_prev{
+        display: none;
+    }
+    .card{
+        margin:0;
     }
 }
