@@ -56,7 +56,7 @@ body{
 .header__top{
     padding: 15px 0 15px 0;
     background-color: #000;
-    min-height: 80px;
+    /* min-height: 80px; */
     width: 100%;
     position: fixed;
     top: 0;
@@ -267,7 +267,7 @@ body{
 text-align: center;
 font-size: 106.496px;
 font-style: normal;
-
+right: 30px;
 font-weight: 700;
 line-height: 75%; /* 79.872px */
 text-transform: uppercase;
@@ -718,6 +718,7 @@ padding-bottom: 180px;
 .leav{
     background-image: url(../assets/img/leav_foto.png);
     background-repeat: no-repeat;
+    background-size: cover;
     width: 230.92px;
     height: 295.449px;
     position: absolute;
@@ -1009,9 +1010,25 @@ padding-bottom: 180px;
     }
 
 
-/* @media only screen and (max-width: 1200px){
-  
-} */
+@media only screen and (max-width: 1200px){
+  .container__header{
+    height: 560px;
+  }
+  .header__main__circle{
+    width: 367px;
+    height: 367px;
+    right: 100px;
+    top:70px;
+}
+    .header__main__title{
+    font-size: 85px;
+    top: 105px;
+    right: -25px;
+}   
+    .header__main__button{
+        top: 480px;
+    }
+}
 
 @media only screen and (max-width: 1024px){
     .container{
@@ -1181,6 +1198,7 @@ padding-bottom: 180px;
         max-width: 770px;
         
     }
+   
     /* .feedback__cards{
         display: block;
     }
@@ -1206,7 +1224,7 @@ padding-bottom: 180px;
 }
 @media only screen and (max-width:675px){
     .swiper-wrapper{
-        max-width: 570px;
+        max-width: 600px;
         
     }
     .card__image{
@@ -1218,5 +1236,33 @@ padding-bottom: 180px;
     }
     .card{
         margin:0;
+    }
+    .header__main__circle{
+        width: 237.6px;
+        height: 237.6px;
+        right: 100px;
+        top:70px;
+    }
+    .header__main__title{
+        font-size: 54.29px;
+        top: 105px;
+        right: -60px;
+    }
+    .container__header{
+        height: 400px;
+    }
+    .logo__box{
+        border: 0;
+    }
+    .header__top{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .header__top-menu{
+        top: 50px;
+    }
+    .header__main__button{
+        top: 330px;
+        left: 30px;
     }
 }

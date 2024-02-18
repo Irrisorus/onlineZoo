@@ -38,10 +38,12 @@ new Swiper(".swiper-feedback",{
 
     breakpoints:{
         0:{
-            slidesPerView:2,
+            slidesPerView:1,
             spaceBetween:30,
         },
-        
+        450:{
+            slidesPerView:2,
+        },
         850:{
             slidesPerView:3,
             spaceBetween:0,

@@ -287,7 +287,11 @@ position: absolute;
   }
 
 
-
+  @media only screen and (max-width: 1200px){
+    .container__header{
+      height: 560px;
+    }
+  }
   @media only screen and (max-width: 1024px){
     .container__donation{
         padding: 40px 30px 180px;
@@ -297,5 +301,35 @@ position: absolute;
         display: none;
     }
   }
+  @media only screen and (max-width:890px){
+    .pay-amount__elipse[data-index-number="2"],
+    .amount-of-money[data-index-number="2"]{
+        display: none;
+    }
+  }
 
+  @media only screen and (max-width:760px){
+    .pay-amount__elipse[data-index-number="3"],
+    .amount-of-money[data-index-number="3"]{
+        display: none;
+    }
+}
+  @media only screen and (max-width:675px){
+    
+   
+   
+    .container__header{
+        height: 400px;
+    }
+    .logo__box{
+        border: 0;
+    }
+    .header__top{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .header__top-menu{
+        top: 50px;
+    }
+}
   
