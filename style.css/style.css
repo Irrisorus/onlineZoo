@@ -320,9 +320,9 @@ top: 160px;
 
 }
 .explanation__img{
-    width: 609px;
+    width: 100%;
     height: 403px;
-    flex-shrink: 0;
+    flex-shrink: 0.6;
     background-image: url(../assets/img/bamboo-cap.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -433,9 +433,9 @@ line-height: 120%; /* 28.8px */
     color: #FFF;
     border-color: transparent;
     cursor: pointer;
-    transition: .5s;
+    transition: all 0.3s ease 0s;
     background: #4B9200;
-    transition: .5s;
+    
 }
 .slider__button_remove{
     transition: .5s;
@@ -447,6 +447,22 @@ line-height: 120%; /* 28.8px */
  
     
 }
+.swiper-wrapper{
+   
+  
+}
+
+.swiper-slide{
+    /* max-width: 366px; */
+  
+    display: grid;
+    grid-template-rows: 1fr 1fr
+   
+    
+}
+.slide-feedback{
+    display: block;
+}
 .slider__cards{
     display: flex;
     flex-direction: row;
@@ -455,12 +471,12 @@ line-height: 120%; /* 28.8px */
     
 }
 .card__image{
-    width: 366px;
-    height: 366px;
-    flex-shrink: 0;
+    width: 100%;
+    height: 364px;
+
     background-image: url(../assets/img/pandas.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 
 }
 
@@ -488,7 +504,6 @@ line-height: 120%; /* 28.8px */
 }
 .animal__info-block{
     display: flex;
-    gap:11px;
     padding:8px 16px 14px 12px;
     justify-content: space-between;
     align-items: center;
@@ -560,7 +575,7 @@ line-height: 120%; /* 28.8px */
     display: flex;
     flex-direction:column ;
     align-items: center;
-    padding:41px 88px 59px 88px ;
+    padding:10px 20px 76px  ;
    
     justify-content:center;
     border-radius: 20px;
@@ -609,8 +624,10 @@ margin-top: 60px;
 .feed__steps{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    gap: 30px;
+    justify-content: space-around;
+    width: 90%;
+    position: relative;
+    
    
 }
 .feed__card{
@@ -618,6 +635,7 @@ margin-top: 60px;
     flex-direction: column;
     gap: 30px;
     max-width: 168px;
+
 }
 .feed__card__background{
     border-radius: 5px;
@@ -675,11 +693,14 @@ margin-top: 60px;
 .feed__arrow{
     background-image: url(../assets/img/Vector.png);
     background-repeat: no-repeat;
+    background-size: cover;
     width: 72px;
     height: 37.079px;
     margin-top: 60px;
+  
 
 }
+
 
 /* ---------------------------------------------------feedback----------------------------------------------------------- */
 .feedback{
@@ -760,14 +781,14 @@ padding-bottom: 180px;
     flex-direction: column;
    
    max-width: 268px;
-   height: 100%;
+   height: 391px;
    border-radius: 20px;
    border: 2px solid var(--pink_gradient, rgba(254, 189, 171, 0.74));
    background: var(--gray_light, #F1F3F2);
    padding: 15px 15px 15px 15px;
    gap: 10px ;
    min-width: 0;
-    
+    overflow: hidden;
 }
 .feedback__card__info{
     display: flex;
@@ -984,13 +1005,9 @@ padding-bottom: 180px;
     }
 
 
-@media only screen and (max-width: 1200px){
-    .explanation__img{
-        width: 455px;
-        height: 408px;
-        
-    }
-}
+/* @media only screen and (max-width: 1200px){
+  
+} */
 
 @media only screen and (max-width: 1024px){
     .container{
@@ -1023,6 +1040,7 @@ padding-bottom: 180px;
     .explanation__img{
         width: 455px;
         height: 408px;
+        flex-shrink: 0;
     }
     
     .slider__cards{
@@ -1033,10 +1051,11 @@ padding-bottom: 180px;
     }
  
     .card__image{
-    width: 294px;
-    height: 294px;
-
-    }
+   
+        
+        width: 100%;
+    
+        }
     /* .arrows-block{
         display: flex;
         top: 46.5%;
@@ -1072,6 +1091,11 @@ padding-bottom: 180px;
 
 }
 
+@media only screen and (max-width:980px){
+    .explanation__img{
+        display: none;
+    }
+}
 
 @media only screen and (max-width:900px){
    
@@ -1103,7 +1127,7 @@ padding-bottom: 180px;
         
     }
     .header__top-menu_active{
-        top:70px;
+        top:69px;
         left:-30px;
         transition: all 0.3s ease 0s;
     }
@@ -1127,4 +1151,25 @@ padding-bottom: 180px;
         color: #FE9013;
     }
     
+}
+@media only screen and (max-width:850px){
+    .feed__arrow{
+        background-image: url(../assets/img/right-arrow.png);
+        position: absolute;
+        transform: rotate(40deg);
+        top: -45%;
+        width: 100px;
+        height: 100px;
+        left: 30%;
+        z-index: 2;
+      
+    
+    }
+    .feed__arrow:nth-child(2){
+       
+      
+        left: 60%;
+        
+    
+    }
 }

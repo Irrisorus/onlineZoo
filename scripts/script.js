@@ -1,9 +1,24 @@
-new Swiper(".swiper",{
+let mySwiper=new Swiper(".swiper",{
+    slidesPerView:3,
+    spaceBetween:30,
     navigation:{
 
         nextEl:".slider__button_next",
         prevEl:".slider__button_prev"
     },
+    breakpoints:{
+        640:{
+            slidesPerView:2,
+        },
+       
+        1240:{
+            slidesPerView:3,
+        },
+       
+    },
+    
+
+    
  
    
     
@@ -23,7 +38,7 @@ new Swiper(".swiper-feedback",{
             slidesPerView:3,
             spaceBetween:30,
         },
-        1024:{
+        1100:{
             slidesPerView:4,
         }
     }
@@ -44,13 +59,13 @@ let logoName=document.querySelector(".logo__name")
 let wrapper=document.querySelector(".wrapper")
 
 
-let sliderButtons =[];
+let sliderButtons =[nextButton,prevButton];
 console.log(sliderButtons);
 sliderButtons.forEach(element => {
     element.addEventListener('click',function(e){
-
+        console.log("aaaa");
         element.classList.add("slider__button_active");
-        setTimeout(() => {element.classList.remove("slider__button_active");} , 1000);
+        setTimeout(() => {element.classList.remove("slider__button_active");} , 200);
        
     })
     
