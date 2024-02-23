@@ -298,12 +298,17 @@ top: 160px;
     flex-shrink: 0;
     border-radius: 25px;
     border-color: transparent;
-    background: var(--orange, linear-gradient(114deg, #F9804B 1.49%, #FE9013 101.44%));
+    background: #FE9013  ;
     color: #FFF;
     position: absolute;
     top: 640px;
     right: 90px;
     cursor: pointer;
+    transition: .3s ;
+    }
+    .header__main__button:hover{
+        background: rgb(228, 114, 9);
+        transition: .5s ;
     }
 
 
@@ -447,6 +452,7 @@ line-height: 120%; /* 28.8px */
  
     
 }
+
 .swiper-wrapper{
    
   position: relative;
@@ -669,12 +675,16 @@ margin-top: 60px;
     width: 124.747px;
     height: 71.603px;
 }
+
 .button{
     display: flex;
-    width: 298px;
+    max-width: 298px;
+    width: 100%;
     height: 54px;
     padding: 16px 1px 16px 5px;
     justify-content: flex-end;
+    position: relative;
+    z-index: 2;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
@@ -1264,5 +1274,34 @@ padding-bottom: 180px;
     .header__main__button{
         top: 330px;
         left: 30px;
+    }
+    .header__top-menu{
+        width: 675px;
+    }
+}
+@media only screen and (max-width:580px){
+    .feed__steps{
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+
+    }
+    .feed__card{
+        gap: 10px;
+    }
+    .feed__arrow{
+        transform: rotate(130deg);
+        top:13%;
+        left:58%;
+        z-index: 2;
+      
+    
+    }
+    .feed__arrow:nth-child(2){
+    left:58%;
+       top: 48%;
+      
+        
+    
     }
 }
