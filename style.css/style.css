@@ -87,7 +87,8 @@ body{
 }
 
 
-.logo__box{
+.logo__box,
+.logo-box__footer{
     display: flex;
     flex-wrap: wrap;
     border-radius: 2px;
@@ -118,7 +119,8 @@ body{
 }
 
 
-.logo__image{
+.logo__image,
+.logo__image-footer{
     
     background-image: url(../assets/img/bamboo.png);
     background-repeat: no-repeat; 
@@ -390,6 +392,7 @@ line-height: 120%; /* 28.8px */
     flex-shrink: 0;
     background-image: url(../assets/img/strelitzia.png);
     background-repeat: no-repeat;
+    background-size: contain;
     position: absolute;
     bottom: 0px;
     
@@ -402,6 +405,7 @@ line-height: 120%; /* 28.8px */
     bottom: 0px;
     background-image: url(../assets/img/palm_foto.png);
     background-repeat: no-repeat;
+    background-size: contain;
 }
 
 
@@ -733,8 +737,8 @@ padding-bottom: 180px;
     background-image: url(../assets/img/leav_foto.png);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 230.92px;
-    height: 295.449px;
+    width: 20%;
+    height: 20%;
     position: absolute;
     bottom: 0px;
     right: 0px;
@@ -1332,4 +1336,47 @@ padding-bottom: 180px;
         
     
     }
+
+}   
+@media only screen and (max-width:550px){
+    .footer__block:nth-child(1){     
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    .footer-list{
+        justify-content: center;
+    }
+    .footer-item:nth-last-child(2){
+        display: none;
+    }
+    .logo-box__footer{
+       max-width: none;
+        border:none;
+    }
+    .logo__image-footer{
+        left: 83px;
+        top: 8px;
+    }
+    .donate__button{
+        margin-top: 100px;
+    }
+    .medium__box{
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        left: 0;
+        top:40%;
+        
+    }
+}
+@media only screen and (max-width:450px){
+    .footer-list{
+        gap: 0;
+        justify-content: space-between;
+    }
+    .header__top-menu{
+       width: 500px;
+    }
+
+    
 }
