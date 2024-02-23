@@ -313,6 +313,12 @@ position: absolute;
     .amount-of-money[data-index-number="3"]{
         display: none;
     }
+    .Help__title{
+        font-size: 24px;
+    }
+    .help__text{
+        font-size: 16px;
+    }
 }
   @media only screen and (max-width:675px){
     
@@ -330,6 +336,36 @@ position: absolute;
     }
     .header__top-menu{
         top: 50px;
+    }
+}
+@media only screen and (max-width:630px){
+    .donation__info-title,
+    .pay__title{
+        font-size: 24px;
+    }
+    .pay__subtitle{
+        font-size: 16px;
+    }
+    .pay-amount__elipse[data-index-number="4"],
+    .amount-of-money[data-index-number="4"]{
+        display: none;
+    }
+
+}
+@media only screen and (max-width:520px){
+    .pay-amount__elipse[data-index-number="5"],
+    .amount-of-money[data-index-number="5"]{
+        display: none;
+    }
+    .animal__icon{
+        width: 151.4px;
+        height: 111.92px;
+    }
+    .amount-of-diets{
+        font-size: 40.6px;
+    }
+    .donation__text__info{
+        font-size: 9.02px;
     }
 }
   

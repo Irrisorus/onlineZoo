@@ -1057,9 +1057,7 @@ padding-bottom: 180px;
     }
     
     
-    .header__main__title{
-        right: 25px;
-    }
+   
     .animals-cards__photo-flowers{
         display: none;
     }
@@ -1282,13 +1280,13 @@ padding-bottom: 180px;
     .header__main__circle{
         width: 237.6px;
         height: 237.6px;
-        right: 100px;
+        right: 80px;
         top:70px;
     }
     .header__main__title{
         font-size: 54.29px;
         top: 105px;
-        right: -60px;
+        right: -85px;
     }
     .container__header{
         height: 400px;
@@ -1377,6 +1375,37 @@ padding-bottom: 180px;
     .header__top-menu{
        width: 500px;
     }
-
-    
+    .header__main__button{
+        top:427.5px;
+        width: 85%;
+        z-index: 2;
+    }
+    .explanation__title{
+        font-size: 24px;
+    }
+    .explanation__text{
+        font-size: 16px;
+    }
+    .explanation__info{
+        gap: 20px;
+    }
+    .explanation__subtitle{
+        font-size: 24px;
+    }
+    .feed__title,
+    .feed__info{
+        font-size: 24px;
+        text-align: center;
+    }
+    .feed__subtitle{
+        font-size: 18px;
+        margin: 0;
+    }
+    .feed__text-info,
+    .feed__text_COVID{
+        display: none;
+    }
+    .feed__title_work{
+        margin: 20px 0;
+    }
 }
