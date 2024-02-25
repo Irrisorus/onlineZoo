@@ -39,18 +39,19 @@ new Swiper(".swiper-feedback",{
     breakpoints:{
         0:{
             slidesPerView:1,
-            spaceBetween:0,
+            
         },
         580:{
             slidesPerView:2,
-            spaceBetween:0,
+            
         },
         850:{
             slidesPerView:3,
-            spaceBetween:0,
+            
         },
         1100:{
             slidesPerView:4,
+           
         }
     }
    
@@ -76,7 +77,9 @@ sliderButtons.forEach(element => {
     element.addEventListener('click',function(e){
         console.log("aaaa");
         element.classList.add("slider__button_active");
-        setTimeout(() => {element.classList.remove("slider__button_active");} , 200);
+        setTimeout(() => {
+            element.classList.remove("slider__button_active");
+        } , 1000);
        
     })
     

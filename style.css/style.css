@@ -433,7 +433,7 @@ line-height: 120%; /* 28.8px */
     border-color: transparent;
     background: var(--orange, linear-gradient(114deg, #F9804B 1.49%, #FE9013 101.44%));
     cursor: pointer;
-    transition: .5s;
+    transition: all 0.3s ease 0s;
 }
 .swiper-button-disabled{
     opacity: 50%;
@@ -451,7 +451,7 @@ line-height: 120%; /* 28.8px */
     
 }
 .slider__button_remove{
-    transition: .5s;
+
     background: var(--orange, linear-gradient(114deg, #F9804B 1.49%, #FE9013 101.44%));
 }
 .card__block{
@@ -569,6 +569,7 @@ line-height: 120%; /* 28.8px */
     align-items: center;
     flex-wrap: wrap;
     position: relative;
+    max-width: 100%;
 }
 
 
@@ -767,7 +768,6 @@ padding-bottom: 180px;
 .swiper-feedback{
     display: flex;
     overflow: hidden;
-    gap: 30px;
     min-width: 0;
    
     position: relative;
@@ -776,17 +776,20 @@ padding-bottom: 180px;
 }
 
 
-
 .swiper-scrollbar{
     cursor: pointer;
     background-color:#FE9013;
     position: relative;
     z-index: 1;
-   
+    /* max-width: 730px; */
    
    
 }
-
+.slide-feedback{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+   }
 /* .feedback__cards::-webkit-scrollbar{
     height: 8px;
 }
@@ -865,10 +868,9 @@ padding-bottom: 180px;
 }
 
 
-
 /* -----------------------------------------------------footer------------------------------------------- */
 .footer{
-    background-color: #000;
+    background-color: #000; 
     padding-top: 41px;
     padding-bottom: 50px;
 }
@@ -1212,7 +1214,7 @@ padding-bottom: 180px;
         
     
     }
-    .swiper-wrapper{
+    .swiper-wrapper__animal-cards{
         max-width: 770px;
         
     }
@@ -1263,7 +1265,7 @@ padding-bottom: 180px;
     }
 }
 @media only screen and (max-width:675px){
-    .swiper-wrapper{
+    .swiper-wrapper__animal-cards{
         max-width: 600px;
         
     }
@@ -1329,12 +1331,12 @@ padding-bottom: 180px;
     }
     .feed__arrow:nth-child(2){
     left:58%;
-       top: 48%;
+    top: 48%;
       
         
     
     }
-
+   
 }   
 @media only screen and (max-width:550px){
     .footer__block:nth-child(1){     
