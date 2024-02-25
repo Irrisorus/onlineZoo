@@ -10,11 +10,15 @@ new Swiper(".swiper",{
        1:{
             slidesPerView:1,
         },
-        675:{
+        638:{
             slidesPerView:2,
         },
+        850:{
+            slidesPerView:2.5,
+            spaceBetween:0,
+        },
        
-        1240:{
+        900:{
             slidesPerView:3,
         },
        
