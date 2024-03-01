@@ -9,9 +9,11 @@ new Swiper(".swiper",{
     breakpoints:{
        1:{
             slidesPerView:1,
+            spaceBetween:0,
         },
         638:{
             slidesPerView:2,
+            spaceBetween:0,
         },
         850:{
             slidesPerView:2.5,
@@ -34,7 +36,7 @@ new Swiper(".swiper",{
 
 new Swiper(".swiper-feedback",{
 
-
+    spaceBetween:0,
     scrollbar:{
         el:'.swiper-scrollbar',
         draggable:true
