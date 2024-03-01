@@ -20,6 +20,7 @@ new Swiper(".swiper",{
        
         900:{
             slidesPerView:3,
+            spaceBetween:30,
         },
        
     },
